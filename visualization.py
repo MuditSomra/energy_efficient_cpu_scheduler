@@ -19,7 +19,7 @@ class Visualizer:
 
     @staticmethod
     def plot_energy_bar(energy_rr, energy_earr):
-        plt.figure(figsize=(5, 4))
+        plt.figure(figsize=(6, 4))
         plt.bar(["Traditional RR", "Energy-Aware RR"], [energy_rr, energy_earr], color=["red", "green"])
         plt.title("Total Energy Consumption Comparison")
         plt.ylabel("Energy (Joules)")
@@ -27,7 +27,7 @@ class Visualizer:
 
     @staticmethod
     def plot_gantt_chart(gantt, title):
-        plt.figure(figsize=(8, 2))
+        plt.figure(figsize=(8, 4))
         colors = {"LOW": "green", "MED": "orange", "HIGH": "red"}
         for start, pid, freq in gantt:
             plt.barh(y=pid, width=1, left=start, color=colors.get(freq, "blue"))
@@ -38,6 +38,7 @@ class Visualizer:
 
     def generate_dashboard(rr, earr, completed_rr, completed_earr):
     # Compute averages
+        # plt.tight_layout(rect=[0, 0, 1, 0.95])  # f
         def avg_metrics(completed):
             avg_wait = sum(p.waiting for p in completed) / len(completed)
             avg_turn = sum(p.turnaround for p in completed) / len(completed)
@@ -54,7 +55,7 @@ class Visualizer:
         })
 
         # 2x2 Dashboard Layout
-        fig, axs = plt.subplots(2, 2, figsize=(14, 10))
+        fig, axs = plt.subplots(2, 2, figsize=(12, 8))
         fig.suptitle("Energy-Aware Round Robin vs Traditional Round Robin - Dashboard", fontsize=16, fontweight='bold')
 
         # 1️⃣ POWER vs TIME (Top-left)
