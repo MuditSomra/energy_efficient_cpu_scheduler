@@ -1,0 +1,19 @@
+# Energy-Aware CPU Scheduling Algorithm (EARR)
+
+### Description
+This project implements an Energy-Efficient CPU Scheduling Algorithm based on Round Robin. It uses Dynamic Voltage and Frequency Scaling (DVFS) to reduce CPU power consumption while maintaining fairness and performance.
+
+### Modules
+1. **scheduler.py** — Implements Round Robin scheduling.
+2. **energy_module.py** — Handles DVFS logic and power calculation.
+3. **visualization.py** — Generates charts comparing power, energy, and scheduling.
+4. **main.py** — Entry point for execution.
+
+### Power Model
+\[
+P = 0.5 \times f^3 + 0.1
+\]
+
+### Run
+```bash
+python main.py

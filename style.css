@@ -1,0 +1,123 @@
+/* ============================================
+   GLOBAL FONT SIZE + FONT FAMILY
+============================================ */
+html, body, [class*="css"] {
+    font-size: 20px !important;
+    font-family: "Segoe UI", sans-serif !important;
+}
+
+/* ============================================
+   SIDEBAR — bigger but color-safe
+============================================ */
+section[data-testid="stSidebar"] {
+    width: 350px !important;
+    padding: 20px !important;
+}
+
+section[data-testid="stSidebar"] * {
+    font-size: 20px !important;
+}
+
+/* ============================================
+   BUTTONS — clean, theme-compatible
+============================================ */
+.stButton > button {
+    font-size: 22px !important;
+    padding: 14px 26px !important;
+    border-radius: 10px !important;
+    width: 100% !important;
+    border: 1px solid rgba(200,200,200,0.4) !important;
+    transition: 0.15s ease-in-out;
+}
+
+.stButton > button:hover {
+    transform: scale(1.03);
+    border-color: rgba(160,160,160,0.7) !important;
+}
+
+/* ============================================
+   HEADINGS — clear and readable
+============================================ */
+h1 {
+    font-size: 42px !important;
+    font-weight: 800 !important;
+}
+
+h2 {
+    font-size: 34px !important;
+}
+
+h3 {
+    font-size: 28px !important;
+}
+
+h4, h5, h6 {
+    font-size: 24px !important;
+}
+
+/* ============================================
+   TABS — larger text + spacing
+============================================ */
+.stTabs button {
+    font-size: 22px !important;
+    padding: 12px 20px !important;
+}
+
+/* ============================================
+   TABLES — readable
+============================================ */
+[data-testid="stDataFrame"] table {
+    font-size: 18px !important;
+}
+
+[data-testid="stDataFrame"] th {
+    font-size: 18px !important;
+    font-weight: 700 !important;
+}
+
+[data-testid="stDataFrame"] td {
+    font-size: 18px !important;
+}
+
+/* ============================================
+   METRICS
+============================================ */
+[data-testid="metric-container"] {
+    font-size: 20px !important;
+}
+
+/* ============================================
+   INPUTS — number, text, slider labels
+============================================ */
+label {
+    font-size: 20px !important;
+}
+
+input, select, textarea {
+    font-size: 20px !important;
+}
+
+/* ============================================
+   SLIDER LABELS + VALUE TEXT
+============================================ */
+.stSlider label {
+    font-size: 20px !important;
+}
+
+.stSlider [data-testid="stTickBar"] div {
+    font-size: 18px !important;
+}
+
+/* ============================================
+   COLUMN SPACING
+============================================ */
+.stColumn {
+    padding: 10px !important;
+}
+
+/* ============================================
+   PLOT PADDING
+============================================ */
+[data-testid="stPyplotChart"] {
+    padding: 5px !important;
+}
