@@ -11,9 +11,7 @@ This project implements an Energy-Efficient CPU Scheduling Algorithm based on Ro
 
 ### Power Model
 \[
-
 P = 0.5 \times f^3 + 0.1
-
 \]
 
 ### Run
